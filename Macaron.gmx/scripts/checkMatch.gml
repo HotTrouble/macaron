@@ -11,7 +11,7 @@ if(tx>-1 && tx<9 && ty>-1 && ty<5)
   tileObj=global.tiles[tx,ty];
   if(tileObj!=0)
   {
-    return tileObj.sprite_index==sprite_index;
+    return tileObj.image_index==image_index;
   }
   else
   {

@@ -85,34 +85,6 @@ Generate_Grid(5, 5, egrid, tile);
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>&lt;undefined&gt;</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>mainChar_talking</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0.1</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>

@@ -11,7 +11,7 @@ if(tx>-1 && tx<9 && ty>-1 && ty<5)
   tileObj=global.tiles[tx,ty];
   if(tileObj!=0)
   {
-    tileObj.sprite_index=gray_spr;
+    tileObj.image_index=0;
     global.tilesLeft++;
   }
 }
