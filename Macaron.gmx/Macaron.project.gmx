@@ -10,31 +10,18 @@
     <sound>sound\purplematch_snd</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="captain">
-      <sprite>sprites\hexagon_spr</sprite>
-      <sprite>sprites\ships_spr</sprite>
-      <sprite>sprites\enemy_spr</sprite>
-      <sprite>sprites\openhexagon_spr</sprite>
-      <sprite>sprites\earth_spr</sprite>
-      <sprite>sprites\mars_spr</sprite>
+    <sprites name="title">
+      <sprite>sprites\wahrk_spr</sprite>
+      <sprite>sprites\hottrouble_spr</sprite>
+      <sprite>sprites\titlehelp_spr</sprite>
+      <sprite>sprites\play_spr</sprite>
     </sprites>
     <sprites name="engineer">
       <sprite>sprites\unplated</sprite>
       <sprite>sprites\plated</sprite>
-    </sprites>
-    <sprites name="ship">
-      <sprite>sprites\console_spr</sprite>
-      <sprite>sprites\scout_spr</sprite>
-      <sprite>sprites\station_spr</sprite>
-      <sprite>sprites\reactor_spr</sprite>
-      <sprite>sprites\scout_outside_spr</sprite>
-      <sprite>sprites\station_outside_spr</sprite>
-    </sprites>
-    <sprites name="title">
-      <sprite>sprites\scbutton</sprite>
-      <sprite>sprites\wahrk_spr</sprite>
-      <sprite>sprites\hottrouble_spr</sprite>
-      <sprite>sprites\sebutton</sprite>
+      <sprite>sprites\table_spr</sprite>
+      <sprite>sprites\bunny_spr</sprite>
+      <sprite>sprites\arrow_spr</sprite>
     </sprites>
     <sprite>sprites\back_spr</sprite>
     <sprites name="characters">
@@ -52,9 +39,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\titlescreen</background>
-    <background>background\winScreen</background>
     <background>background\spaceBackground</background>
-    <background>background\loseScreen</background>
     <background>background\engineer_win_bg</background>
     <background>background\engineer_lose_bg</background>
   </backgrounds>
@@ -108,6 +93,8 @@
       <object>objects\title_control</object>
       <object>objects\wahrk_button</object>
       <object>objects\hottrouble_button</object>
+      <object>objects\titlehelp</object>
+      <object>objects\play_button</object>
     </objects>
     <objects name="engineer">
       <object>objects\engineer_play_control</object>
@@ -115,6 +102,8 @@
       <object>objects\engineer_lose_control</object>
       <object>objects\tile</object>
       <object>objects\nextTile</object>
+      <object>objects\grid_marker</object>
+      <object>objects\table</object>
       <objects name="achievements">
         <object>objects\ach_red</object>
         <object>objects\ach_orange</object>
@@ -123,8 +112,9 @@
         <object>objects\ach_blue</object>
         <object>objects\ach_purple</object>
       </objects>
+      <object>objects\bunny</object>
+      <object>objects\arrow</object>
     </objects>
-    <object>objects\grid_marker</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
