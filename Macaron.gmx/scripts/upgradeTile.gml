@@ -6,7 +6,7 @@ if(image_index>0 && image_index<6)
 //  ach_orange.image_xscale=0.25;
 //  ach_orange.image_yscale=0.25;
 
-  if(image_index==6)
+  if(winCondition())
   {
     audio_play_sound(purplematch_snd, 10, false);
   }

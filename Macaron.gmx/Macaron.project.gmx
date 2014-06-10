@@ -16,12 +16,33 @@
       <sprite>sprites\titlehelp_spr</sprite>
       <sprite>sprites\play_spr</sprite>
     </sprites>
+    <sprites name="level_select">
+      <sprite>sprites\next_button_spr</sprite>
+      <sprite>sprites\back_arrow_spr</sprite>
+      <sprite>sprites\level_select_title_spr</sprite>
+      <sprite>sprites\level_num_spr</sprite>
+      <sprite>sprites\level_bg_spr</sprite>
+    </sprites>
     <sprites name="engineer">
       <sprite>sprites\unplated</sprite>
       <sprite>sprites\plated</sprite>
       <sprite>sprites\table_spr</sprite>
       <sprite>sprites\bunny_spr</sprite>
       <sprite>sprites\arrow_spr</sprite>
+      <sprite>sprites\pause_spr</sprite>
+      <sprites name="animations">
+        <sprite>sprites\anim_12_spr</sprite>
+        <sprite>sprites\anim_23_spr</sprite>
+        <sprite>sprites\anim_34_spr</sprite>
+        <sprite>sprites\anim_45_spr</sprite>
+        <sprite>sprites\anim_56_spr</sprite>
+      </sprites>
+      <sprites name="menu">
+        <sprite>sprites\pause_button_spr</sprite>
+        <sprite>sprites\play_menu_button_spr</sprite>
+        <sprite>sprites\quit_menu_button_spr</sprite>
+        <sprite>sprites\restart_menu_button_spr</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\back_spr</sprite>
     <sprites name="characters">
@@ -59,10 +80,14 @@
       <script>scripts\enemyMove.gml</script>
     </scripts>
     <scripts name="engineer">
+      <script>scripts\initAnimations.gml</script>
       <script>scripts\checkMatches.gml</script>
       <script>scripts\checkMatch.gml</script>
       <script>scripts\clearTile.gml</script>
+      <script>scripts\makeCookie.gml</script>
       <script>scripts\upgradeTile.gml</script>
+      <script>scripts\checkCookie.gml</script>
+      <script>scripts\winCondition.gml</script>
     </scripts>
     <scripts name="network">
       <script>scripts\InitNetwork.gml</script>
@@ -88,13 +113,20 @@
   </fonts>
   <objects name="objects">
     <object>objects\init_control</object>
-    <object>objects\back_button</object>
     <objects name="title">
       <object>objects\title_control</object>
       <object>objects\wahrk_button</object>
       <object>objects\hottrouble_button</object>
       <object>objects\titlehelp</object>
       <object>objects\play_button</object>
+    </objects>
+    <objects name="level_select">
+      <object>objects\next_button</object>
+      <object>objects\back_button</object>
+      <object>objects\level_title</object>
+      <objects name="levels">
+        <object>objects\lvl1</object>
+      </objects>
     </objects>
     <objects name="engineer">
       <object>objects\engineer_play_control</object>
@@ -114,11 +146,20 @@
       </objects>
       <object>objects\bunny</object>
       <object>objects\arrow</object>
+      <object>objects\cookie</object>
+      <objects name="menu">
+        <object>objects\pause_overlay</object>
+        <object>objects\pause_button</object>
+        <object>objects\play_menu_button</object>
+        <object>objects\quit_menu_button</object>
+        <object>objects\restart_menu_button</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
     <room>rooms\title</room>
+    <room>rooms\level_select</room>
     <rooms name="engineer">
       <room>rooms\engineer_play</room>
       <room>rooms\engineer_win</room>
@@ -139,7 +180,7 @@
     <rtf>help.rtf</rtf>
   </help>
   <TutorialState>
-    <IsTutorial>0</IsTutorial>
+    <IsTutorial>-1</IsTutorial>
     <TutorialName>C:\Users\Brandon\AppData\Local\gamemaker_studio\tutorials\01 - My First Game\</TutorialName>
     <TutorialPage>1</TutorialPage>
   </TutorialState>

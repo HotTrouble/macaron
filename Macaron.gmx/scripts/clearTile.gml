@@ -1,5 +1,5 @@
 ///clearTile
-var mx, my, mult, tx, ty, tileObj;
+var mx, my, mult, tx, ty, tileObj, cook;
 mx=argument0;
 my=argument1;
 mult=argument2;
@@ -13,5 +13,7 @@ if(tx>-1 && tx<9 && ty>-1 && ty<5)
   {
     tileObj.image_index=0;
     global.tilesLeft++;
+    
+    makeCookie(tileObj.x, tileObj.y, x, y, image_index);
   }
 }

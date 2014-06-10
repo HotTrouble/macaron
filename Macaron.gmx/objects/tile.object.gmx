@@ -3,7 +3,7 @@
   <spriteName>plated</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,10 +26,25 @@
           <argument>
             <kind>1</kind>
             <string>/// Drop tile
+if(!global.paused)
+{
 if(image_index==0)
 {
   image_index=nextTile.image_index;
-  nextTile.image_index=choose(1, 2, 3);
+  
+  if(global.level==0)
+  {
+    nextTile.image_index=1;
+  }
+  else if(global.level==1)
+  {
+    nextTile.image_index=1;
+  }
+  else if(global.level==2)
+  {
+    nextTile.image_index=choose(1, 2, 3);
+  }
+  
   global.tilesLeft--;
 
   if(image_index==1)
@@ -41,7 +56,7 @@ if(image_index==0)
   
   while(checkMatches()) {};
   
-  if(image_index==6)
+  if(winCondition())
   {
     ChangeRoom(engineer_win);
   }
@@ -49,6 +64,7 @@ if(image_index==0)
   {
     ChangeRoom(engineer_lose);
   }
+}
 }
 </string>
           </argument>
