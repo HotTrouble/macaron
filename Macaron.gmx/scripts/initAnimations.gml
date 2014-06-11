@@ -1,3 +1,5 @@
+randomize();
+
 global.paused=false;
 
 global.animations[5]=anim_56_spr

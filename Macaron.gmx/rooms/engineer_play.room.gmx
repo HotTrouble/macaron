@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1136</width>
   <height>640</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -65,6 +65,7 @@
     <instance objName="pause_button" x="1120" y="112" name="inst_F13FBE30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="quit_menu_button" x="864" y="288" name="inst_D9E8EF89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="restart_menu_button" x="784" y="176" name="inst_CFEC8BD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="tutorial" x="419" y="471" name="inst_7C90C1D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

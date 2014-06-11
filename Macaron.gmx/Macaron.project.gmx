@@ -13,6 +13,7 @@
     <sprites name="title">
       <sprite>sprites\wahrk_spr</sprite>
       <sprite>sprites\hottrouble_spr</sprite>
+      <sprite>sprites\tutorial_spr</sprite>
       <sprite>sprites\titlehelp_spr</sprite>
       <sprite>sprites\play_spr</sprite>
     </sprites>
@@ -63,6 +64,7 @@
     <background>background\spaceBackground</background>
     <background>background\engineer_win_bg</background>
     <background>background\engineer_lose_bg</background>
+    <background>background\level_select_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -89,24 +91,6 @@
       <script>scripts\checkCookie.gml</script>
       <script>scripts\winCondition.gml</script>
     </scripts>
-    <scripts name="network">
-      <script>scripts\InitNetwork.gml</script>
-      <script>scripts\Where.gml</script>
-      <script>scripts\Who.gml</script>
-      <script>scripts\Join.gml</script>
-      <script>scripts\ReceiveNetwork.gml</script>
-      <script>scripts\AddShip.gml</script>
-    </scripts>
-    <scripts name="Fate">
-      <script>scripts\initFate.gml</script>
-      <script>scripts\fateRoll.gml</script>
-      <script>scripts\ladder.gml</script>
-      <script>scripts\roll.gml</script>
-      <script>scripts\resolveFixed.gml</script>
-      <script>scripts\resolveOpposed.gml</script>
-      <script>scripts\generateCharacterName.gml</script>
-      <script>scripts\chooseFromList.gml</script>
-    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\charsheet_font</font>
@@ -123,15 +107,18 @@
     <objects name="level_select">
       <object>objects\next_button</object>
       <object>objects\back_button</object>
+      <object>objects\back_button2</object>
       <object>objects\level_title</object>
       <objects name="levels">
+        <object>objects\level_prototype</object>
         <object>objects\lvl1</object>
+        <object>objects\lvl2</object>
+        <object>objects\lvl3</object>
       </objects>
     </objects>
     <objects name="engineer">
       <object>objects\engineer_play_control</object>
       <object>objects\engineer_win_control</object>
-      <object>objects\engineer_lose_control</object>
       <object>objects\tile</object>
       <object>objects\nextTile</object>
       <object>objects\grid_marker</object>
@@ -145,7 +132,6 @@
         <object>objects\ach_purple</object>
       </objects>
       <object>objects\bunny</object>
-      <object>objects\arrow</object>
       <object>objects\cookie</object>
       <objects name="menu">
         <object>objects\pause_overlay</object>
@@ -154,6 +140,9 @@
         <object>objects\quit_menu_button</object>
         <object>objects\restart_menu_button</object>
       </objects>
+      <object>objects\tutorial</object>
+      <object>objects\win_next_button</object>
+      <object>objects\lose_next_button</object>
     </objects>
   </objects>
   <rooms name="rooms">
